@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    background:  linear-gradient(127deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%);
+/* linear-gradient(127deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+
+body {
+    background: linear-gradient(-20deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.heading{
+    background-color:rgb(2, 249, 171);
+    color: rgb(0, 0, 0);
+    line-height: 5rem;
+    text-align: center;
+
+}
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 3rem;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+
+}
+
+#user-score,
+#com-score {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem
+}
+
+#msg {
+
+    font-size: 2rem;
+    background-color: rgb(241, 241, 47);
+    padding: 1rem;
+    color: black;
+    border-radius: 20%;
+
+}
